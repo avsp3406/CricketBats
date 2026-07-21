@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | BatMaster Pro</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+
+<body>
+
+<!-- =====================
+Top Bar
+===================== -->
+
+<div class="top-bar">
+
+<div class="container">
+
+<p>
+
+🚚 Free Shipping Above ₹2999
+
+</p>
+
+<div class="top-links">
+
+<a href="login.html">Login</a>
+
+<a href="signup.html">Register</a>
+
+<a href="blog.html">Blog</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =====================
+Navbar
+===================== -->
+
+<nav class="navbar">
+
+<div class="container">
+
+<a href="index.html"
+class="logo">
+
+BatMaster <span>Pro</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<button id="darkModeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- =====================
+Hero
+===================== -->
+
+<section class="hero"
+style="min-height:35vh;">
+
+<div class="hero-content">
+
+<h1>
+
+Secure Checkout
+
+</h1>
+
+<p>
+
+Complete your purchase safely.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================
+Checkout
+===================== -->
+
+<section class="checkout">
+
+<div class="container">
+
+<div class="checkout-grid">
+
+<!-- Billing -->
+
+<div class="checkout-form">
+
+<h2>
+
+Billing Details
+
+</h2>
+
+<form id="checkoutForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Mobile Number"
+required>
+
+<input
+type="text"
+placeholder="Street Address"
+required>
+
+<input
+type="text"
+placeholder="City"
+required>
+
+<input
+type="text"
+placeholder="State"
+required>
+
+<input
+type="text"
+placeholder="PIN Code"
+required>
+
+<h3>
+
+Payment Method
+
+</h3>
+
+<label>
+
+<input
+type="radio"
+name="payment"
+checked>
+
+UPI
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="payment">
+
+Credit Card
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="payment">
+
+Debit Card
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="payment">
+
+Net Banking
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="payment">
+
+Cash on Delivery
+
+</label>
+
+<button
+type="submit"
+class="btn">
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+<!-- Summary -->
+
+<div class="order-summary">
+
+<h2>
+
+Order Summary
+
+</h2>
+
+<div id="checkoutItems">
+
+Loading...
+
+</div>
+
+<hr>
+
+<div class="summary-row">
+
+<span>Total</span>
+
+<strong
+id="checkoutTotal">
+
+₹0
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>

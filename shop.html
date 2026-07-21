@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | BatMaster Pro</title>
+
+    <meta name="description"
+        content="Browse premium cricket bats, gloves, pads, helmets and accessories at BatMaster Pro.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+     Top Bar
+=========================== -->
+
+<div class="top-bar">
+
+    <div class="container">
+
+        <p>🚚 Free Shipping on Orders Above ₹2999</p>
+
+        <div class="top-links">
+
+            <a href="login.html">Login</a>
+
+            <a href="signup.html">Register</a>
+
+            <a href="blog.html">Blog</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     Navigation
+=========================== -->
+
+<nav class="navbar">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+
+            BatMaster <span>Pro</span>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="shop.html" class="active-nav">Shop</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="blog.html">Blog</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <button id="darkModeBtn">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+            <a href="cart.html">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cart-count">0</span>
+
+            </a>
+
+        </div>
+
+        <div class="menu-btn">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ===========================
+     Shop Banner
+=========================== -->
+
+<section class="hero" style="min-height:45vh;">
+
+    <div class="hero-content">
+
+        <h1>
+
+            Cricket Shop
+
+        </h1>
+
+        <p>
+
+            Browse premium cricket equipment from BatMaster Pro.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     Filters
+=========================== -->
+
+<section class="shop-filters">
+
+    <div class="container">
+
+        <div class="filter-row">
+
+            <!-- Search -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products...">
+
+            <!-- Category -->
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option>English Willow</option>
+
+                <option>Kashmir Willow</option>
+
+                <option>Junior</option>
+
+                <option>Gloves</option>
+
+                <option>Pads</option>
+
+                <option>Helmet</option>
+
+                <option>Ball</option>
+
+                <option>Shoes</option>
+
+                <option>Bag</option>
+
+                <option>Protection</option>
+
+                <option>Accessories</option>
+
+                <option>Training</option>
+
+            </select>
+
+            <!-- Sort -->
+
+            <select id="sortProducts">
+
+                <option value="default">
+
+                    Sort Products
+
+                </option>
+
+                <option value="low">
+
+                    Price : Low to High
+
+                </option>
+
+                <option value="high">
+
+                    Price : High to Low
+
+                </option>
+
+                <option value="rating">
+
+                    Highest Rated
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     Product Grid
+=========================== -->
+
+<section class="products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+
+                All Products
+
+            </h2>
+
+            <p>
+
+                Showing our complete collection.
+
+            </p>
+
+        </div>
+
+        <!-- Products loaded by JavaScript -->
+
+        <div
+            id="productContainer"
+            class="product-grid">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     Newsletter
+=========================== -->
+
+<section class="newsletter">
+
+    <div class="container newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>Stay Updated</h2>
+
+            <p>
+                Subscribe to receive exclusive offers,
+                new arrivals, and cricket tips.
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required>
+
+            <button
+                type="submit"
+                class="btn">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     Footer
+=========================== -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h2 class="logo">
+
+                BatMaster <span>Pro</span>
+
+            </h2>
+
+            <p>
+
+                Premium cricket bats and equipment
+                for every level of player.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="blog.html">Blog</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Customer Support</h3>
+
+            <ul>
+
+                <li>Email : support@batmasterpro.com</li>
+
+                <li>Phone : +91 98765 43210</li>
+
+                <li>Mon–Sat : 9 AM – 8 PM</li>
+
+                <li>Secure Payments</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+            <br>
+
+            <a
+                href="https://avsp3406.github.io/onlinedataskills/"
+                target="_blank"
+                rel="noopener">
+
+                Visit Online Data Skills →
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 BatMaster Pro.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- JavaScript -->
+
+<script src="js/app.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>

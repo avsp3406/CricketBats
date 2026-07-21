@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | BatMaster Pro</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ======================
+Top Bar
+====================== -->
+
+<div class="top-bar">
+
+<div class="container">
+
+<p>🚚 Free Shipping on Orders Above ₹2999</p>
+
+<div class="top-links">
+
+<a href="login.html">Login</a>
+
+<a href="signup.html">Register</a>
+
+<a href="blog.html">Blog</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ======================
+Navbar
+====================== -->
+
+<nav class="navbar">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+BatMaster <span>Pro</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="cart.html" class="active-nav">Cart</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<button id="darkModeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ======================
+Hero
+====================== -->
+
+<section class="hero" style="min-height:35vh;">
+
+<div class="hero-content">
+
+<h1>Your Shopping Cart</h1>
+
+<p>
+
+Review your products before checkout.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ======================
+Cart
+====================== -->
+
+<section class="cart-page">
+
+<div class="container">
+
+<div class="cart-layout">
+
+<!-- LEFT -->
+
+<div class="cart-items">
+
+<h2>
+
+Cart Items
+
+</h2>
+
+<div id="cartContainer">
+
+<!-- Products inserted by JS -->
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="cart-summary">
+
+<h2>
+
+Order Summary
+
+</h2>
+
+<div class="summary-row">
+
+<span>Items</span>
+
+<span id="summaryItems">
+
+0
+
+</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<span id="summarySubtotal">
+
+₹0
+
+</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Shipping</span>
+
+<span>
+
+FREE
+
+</span>
+
+</div>
+
+<hr>
+
+<div class="summary-row total">
+
+<strong>Total</strong>
+
+<strong id="summaryTotal">
+
+₹0
+
+</strong>
+
+</div>
+
+<a href="checkout.html"
+
+class="btn"
+
+style="width:100%;margin-top:20px;">
+
+Proceed To Checkout
+
+</a>
+
+<button
+
+id="clearCart"
+
+class="btn-outline"
+
+style="width:100%;margin-top:15px;">
+
+Clear Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+     Newsletter
+========================================== -->
+
+<section class="newsletter">
+
+    <div class="container newsletter-container">
+
+        <div class="newsletter-text">
+
+            <h2>Join the BatMaster Community</h2>
+
+            <p>
+
+                Get exclusive offers, cricket tips,
+                and early access to new products.
+
+            </p>
+
+        </div>
+
+        <form class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required>
+
+            <button
+                type="submit"
+                class="btn">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     Footer
+========================================== -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h2 class="logo">
+
+                BatMaster <span>Pro</span>
+
+            </h2>
+
+            <p>
+
+                Premium cricket equipment for
+                professionals and enthusiasts.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Customer Support</h3>
+
+            <ul>
+
+                <li>Email: support@batmasterpro.com</li>
+
+                <li>Phone: +91 98765 43210</li>
+
+                <li>Mon–Sat: 9 AM – 8 PM</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+            <br>
+
+            <a
+                href="https://avsp3406.github.io/onlinedataskills/"
+                target="_blank"
+                rel="noopener">
+
+                Visit Online Data Skills →
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 BatMaster Pro. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- Scripts -->
+
+<script src="js/app.js"></script>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>
