@@ -539,6 +539,26 @@ Read More
             </button>
 
         </form>
+     <script>
+document.getElementById("newsletterForm").addEventListener("submit", function(e) {
+
+    // If you're NOT sending the form anywhere, prevent page reload
+    e.preventDefault();
+
+    const email = document.getElementById("newsletterEmail").value;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: "newsletter_signup",
+        email: email
+    });
+
+    console.log("newsletter_signup fired:", email);
+
+    // Your existing subscription code goes here
+});
+</script>
+
 
     </div>
 
